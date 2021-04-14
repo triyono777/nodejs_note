@@ -14,7 +14,6 @@ exports.create = (req, res) => {
       const note = {
         title:req.body.title,
         description: req.body.description,
-        published:req.body.published ? req.body.published:false
     };
     Note.create(note).then(data=>{
         res.send(data);
