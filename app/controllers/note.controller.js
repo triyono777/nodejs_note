@@ -29,7 +29,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     const title = req.query.title;
     let condition = title ? {title:{
-        [Op.like]:`${title}`
+        [Op.like]:`%${title}%`
     }}:null;
 
     Note.findAll({where:condition}).then(data=>{
