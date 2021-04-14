@@ -4,7 +4,7 @@ module.exports = (sequelize, Sequelize)=>{
         title:{
             type: Sequelize.STRING
         },
-        descrpition:{
+        description:{
             type: Sequelize.STRING
         },
         published:{
