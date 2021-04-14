@@ -114,7 +114,3 @@ exports.deleteAll = (req, res) => {
   })
 };
 
-// Find all published Tutorials
-exports.findAllPublished = (req, res) => {
-  
-};
